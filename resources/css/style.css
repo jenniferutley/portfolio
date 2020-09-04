@@ -1,0 +1,167 @@
+
+
+
+/* -------------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-navy: #10171e;
+    /* --accent: #736757; */
+    --accent: #6B5023;
+}
+
+body {
+    max-width: 1680px;
+    margin: 0 auto; 
+}
+
+html {
+    color: #fff;
+    background-color: var(--dark-navy);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------- */
+
+nav img {
+    height: 150px;
+    float: left;
+}
+
+h1, h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
+h1 {
+    width: 40%;
+    font-size: 350%;
+    clear: both;
+}
+
+h2 {
+    font-size: 200%
+}
+
+header {
+    height: 100vh;
+}
+
+nav {
+    font-size: 90%;
+    font-weight: 600;
+}
+
+span {
+    float: left;
+}
+
+li {
+    list-style: none;
+    float: right;
+    margin-left: 20px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+
+
+/* -------------------------------------------- */
+/* WORKS */
+/* -------------------------------------------- */
+
+.projects img {
+    opacity: 1;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 15px solid #fff;    
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.projects img:hover {
+    opacity: 0.5;    
+}
+
+.projects {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;    
+    margin: 0 auto;
+}
+
+.description {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.projects p {
+    width: 40%;
+    line-height: 150%;
+}
+
+.projects div {
+    margin-bottom: 100px;    
+}
+
+/* -------------------------------------------- */
+/* CONTACT */
+/* -------------------------------------------- */
+
+.contact {
+    margin: 300px 300px 300px 300px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 40px;
+}
+
+.btn {
+    border: 2px solid var(--accent);
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.btn:link,
+.btn:visited {    
+    padding: 10px 30px;
+    color: var(--accent);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: var(--accent);
+    color: #fff;
+}
