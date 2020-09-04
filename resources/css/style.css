@@ -1,8 +1,7 @@
-
-
-
 /* -------------------------------------------- */
+
 /* BASIC SETUP */
+
 /* -------------------------------------------- */
 
 * {
@@ -19,7 +18,7 @@
 
 body {
     max-width: 1680px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 html {
@@ -32,12 +31,14 @@ html {
 }
 
 /* -------------------------------------------- */
+
 /* HEADER */
+
 /* -------------------------------------------- */
 
 nav img {
     height: 150px;
-    float: left;
+    margin-top: 25px;
 }
 
 h1, h2 {
@@ -46,9 +47,10 @@ h1, h2 {
 }
 
 h1 {
-    width: 40%;
+    width: 55%;
     font-size: 350%;
-    clear: both;
+    margin-left: 20%;
+    margin-top: 15%;
 }
 
 h2 {
@@ -56,41 +58,45 @@ h2 {
 }
 
 header {
+    /* background-image: linear-gradient(rgba(16, 23, 30, 0.8), rgba(16, 23, 30, 1)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center; */
     height: 100vh;
 }
 
 nav {
     font-size: 90%;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    
 }
 
-span {
-    float: left;
+.links {
+    align-items: flex-end;
+    margin-left: auto;
 }
 
-li {
-    list-style: none;
-    float: right;
-    margin-left: 20px;
+nav span {
+    margin-right: 24px;
+    font-weight: 500;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
     text-decoration: none;
     color: #fff;
     transition: color 0.5s;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
     text-decoration: none;
     color: var(--accent);
 }
 
-
-
 /* -------------------------------------------- */
+
 /* WORKS */
+
 /* -------------------------------------------- */
 
 .projects img {
@@ -98,20 +104,21 @@ a:active {
     width: 100%;
     max-width: 800px;
     height: auto;
-    border: 15px solid #fff;    
+    border: 15px solid #fff;
     transition: 0.5s ease;
     backface-visibility: hidden;
 }
 
 .projects img:hover {
-    opacity: 0.5;    
+    opacity: 0.5;
 }
 
 .projects {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+    padding-top: 300px;
 }
 
 .description {
@@ -120,21 +127,31 @@ a:active {
 }
 
 .projects p {
-    width: 40%;
+    width: 55%;
     line-height: 150%;
 }
 
 .projects div {
-    margin-bottom: 100px;    
+    margin-bottom: 100px;
 }
 
 /* -------------------------------------------- */
+
 /* CONTACT */
+
 /* -------------------------------------------- */
 
 .contact {
     margin: 300px 300px 300px 300px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding: 100px;
+    
+}
+
+.contact-contents {
+    align-self: center;
 }
 
 .contact h2 {
@@ -153,15 +170,13 @@ a:active {
     letter-spacing: 2px;
 }
 
-.btn:link,
-.btn:visited {    
+.btn:link, .btn:visited {
     padding: 10px 30px;
     color: var(--accent);
     transition: background-color 0.5s, color 0.5s;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover, .btn:active {
     background-color: var(--accent);
     color: #fff;
 }
