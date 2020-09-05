@@ -18,7 +18,7 @@
 
 body {
     max-width: 1680px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 html {
@@ -49,12 +49,13 @@ h1, h2 {
 h1 {
     width: 55%;
     font-size: 350%;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 15%;
 }
 
 h2 {
-    font-size: 200%
+    font-size: 200%;
+    margin-bottom: 20px;
 }
 
 header {
@@ -69,7 +70,6 @@ nav {
     font-weight: 600;
     display: flex;
     align-items: center;
-    
 }
 
 .links {
@@ -82,13 +82,13 @@ nav span {
     font-weight: 500;
 }
 
-a:link, a:visited {
+nav a:link, a:visited {
     text-decoration: none;
     color: #fff;
     transition: color 0.5s;
 }
 
-a:hover, a:active {
+nav a:hover, a:active {
     text-decoration: none;
     color: var(--accent);
 }
@@ -99,41 +99,90 @@ a:hover, a:active {
 
 /* -------------------------------------------- */
 
+.project-img-container {
+    position: relative;
+    width: 100%;
+}
+
+.project-img-container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.project-img-container:hover::before {
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: all 1s ease;
+}
+
+.project-img-container img {
+    display: block;
+    width: 50vw;
+}
+
+.projects a {
+    color: var(--accent);
+    font-size: 110%;
+    text-decoration: none;
+}
+
+.btn-launch {
+    border: 2px solid var(--accent);
+    padding: 10px 30px;
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.project-img-container .btn-launch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.project-img-container:hover .btn-launch {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
 .projects img {
     opacity: 1;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border: 15px solid #fff;
+    display: block;
+    width: 50vw;
+    border: 10px solid #fff;
     transition: 0.5s ease;
     backface-visibility: hidden;
 }
 
-.projects img:hover {
-    opacity: 0.5;
-}
-
 .projects {
     display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    padding-top: 300px;
+    /* gap: 20px; */
+    grid-template-columns: auto auto;
+    /* padding-top: 300px; */
 }
 
-.description {
+.project-description {
     margin-top: 10%;
     margin-bottom: 10%;
+    padding: 10%;
 }
 
 .projects p {
-    width: 55%;
+    /* width: 55%; */
     line-height: 150%;
 }
 
-.projects div {
+/* .projects div {
     margin-bottom: 100px;
-}
+} */
 
 /* -------------------------------------------- */
 
@@ -147,7 +196,6 @@ a:hover, a:active {
     flex-direction: column;
     text-align: center;
     padding: 100px;
-    
 }
 
 .contact-contents {
@@ -162,7 +210,11 @@ a:hover, a:active {
     margin-bottom: 40px;
 }
 
-.btn {
+.contact a {
+    text-decoration: none;
+}
+
+.btn-contact {
     border: 2px solid var(--accent);
     font-size: 80%;
     text-transform: uppercase;
@@ -170,13 +222,13 @@ a:hover, a:active {
     letter-spacing: 2px;
 }
 
-.btn:link, .btn:visited {
+.btn-contact:link, .btn-contact:visited {
     padding: 10px 30px;
     color: var(--accent);
     transition: background-color 0.5s, color 0.5s;
 }
 
-.btn:hover, .btn:active {
+.btn-contact:hover, .btn-contact:active {
     background-color: var(--accent);
     color: #fff;
 }
