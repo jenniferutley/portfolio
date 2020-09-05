@@ -17,8 +17,8 @@
 }
 
 body {
-    max-width: 1680px;
-    /* margin: 0 auto; */
+    /* max-width: 1680px; */
+    margin: 0 3%;
 }
 
 html {
@@ -49,7 +49,7 @@ h1, h2 {
 h1 {
     width: 55%;
     font-size: 350%;
-    margin-left: 15%;
+    margin-left: 17.5%;
     margin-top: 15%;
 }
 
@@ -75,6 +75,7 @@ nav {
 .links {
     align-items: flex-end;
     margin-left: auto;
+    margin-right: 2%;
 }
 
 nav span {
@@ -104,6 +105,10 @@ nav a:hover, a:active {
     width: 100%;
 }
 
+.project-img-container img {
+    display: block;
+}
+
 .project-img-container:before {
     content: "";
     position: absolute;
@@ -118,11 +123,6 @@ nav a:hover, a:active {
 .project-img-container:hover::before {
     background-color: rgba(255, 255, 255, 0.85);
     transition: all 1s ease;
-}
-
-.project-img-container img {
-    display: block;
-    width: 50vw;
 }
 
 .projects a {
@@ -156,33 +156,22 @@ nav a:hover, a:active {
 .projects img {
     opacity: 1;
     display: block;
-    width: 50vw;
+    width: 40vw;
     border: 10px solid #fff;
     transition: 0.5s ease;
     backface-visibility: hidden;
 }
 
-.projects {
-    display: grid;
-    /* gap: 20px; */
-    grid-template-columns: auto auto;
-    /* padding-top: 300px; */
+.flex-row {
+    display: flex;
+    align-items: center;
+    padding: 10% 7% 10% 7%
 }
 
 .project-description {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    padding: 10%;
-}
-
-.projects p {
-    /* width: 55%; */
+    padding: 5% 5% 5% 5%;
     line-height: 150%;
 }
-
-/* .projects div {
-    margin-bottom: 100px;
-} */
 
 /* -------------------------------------------- */
 
@@ -191,15 +180,12 @@ nav a:hover, a:active {
 /* -------------------------------------------- */
 
 .contact {
-    margin: 300px 300px 300px 300px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    padding: 100px;
+    padding: 120px;
 }
 
 .contact-contents {
-    align-self: center;
+    padding: 15% 15% 15% 15%
 }
 
 .contact h2 {
@@ -208,6 +194,7 @@ nav a:hover, a:active {
 
 .contact p {
     margin-bottom: 40px;
+    line-height: 150%;
 }
 
 .contact a {
