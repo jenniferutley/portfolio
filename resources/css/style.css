@@ -10,11 +10,6 @@ BASIC SETUP
 
 :root {
   --dark-navy: #10171e;
-  /* Paletton: */
-  --accent: #736757;
-  /* Adobe: */
-  /* --accent: #6B5023;  */
-  /* Lightened Adobe: */
   --accent: #916d30;
 }
 
@@ -165,20 +160,23 @@ WORKS
 .projects img {
   opacity: 1;
   display: block;
-  width: 40vw;
+  max-width: 100%;
+  height: auto;
   border: 10px solid #fff;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
-.flex-row {
-  display: flex;
-  align-items: center;
-  padding: 10% 7% 10% 7%
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  column-gap: 2%;
+  margin: 7% 7%;
+  align-content: center;
 }
 
 .project-description {
-  padding: 5% 5% 5% 5%;
+  padding: 7% 7% 7% 7%;
   line-height: 150%;
 }
 
