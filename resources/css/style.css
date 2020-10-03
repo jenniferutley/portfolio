@@ -94,7 +94,7 @@ a {
 }
 
 /* --------------------------------------------
-WORKS 
+PROJECTS 
 -------------------------------------------- */
 
 #projects {
@@ -168,7 +168,7 @@ WORKS
 
 .grid-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
   column-gap: 2%;
   margin: 7% 7%;
   align-content: center;
